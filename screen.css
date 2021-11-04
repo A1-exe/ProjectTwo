@@ -7,3 +7,56 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+
+/* == GENERAL STYLES == */
+/* HEADERS */
+header {
+  padding-bottom: 1;
+}
+
+header h1 {
+  font-size: 1.5rem; /* 24 / 16 = 1.5 */
+}
+
+header h2 {
+  font-size: 1.375rem; /* 22 / 16 = 1.375 */
+}
+
+header h3, header h4 {
+  font-size: 1.125rem; /* 18 / 16 = 1.125 */
+  font-style: italic;
+}
+
+/* SECTIONS */
+section {
+  display: inline-flex;
+  flex-direction: column;
+  width: 35vw;
+  padding-bottom: 1.25em; /* 20 / 16 = 1.25 */
+}
+
+/* OTHER */
+p, li {
+  font-size: 1rem; /* 16 / 16 = 1 */
+  line-height: 1.14285714em; /* 16 * 1.14285714 = 18 */
+  overflow-wrap: break-word;
+}
+
+/* == RESUME STYLES == */
+#resume-main {
+  display: flex;
+}
+
+#body-main {
+  width: 50vw;
+}
+
+#body-other {
+  width: 50vw;
+}
+
+/* == COURSEWORK STYLES == */
+#courses-main {
+  display: flex;
+  flex-direction: column;
+}
