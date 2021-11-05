@@ -67,6 +67,7 @@ main {
 header {
   width: 100%;
   font-weight: bold;
+  font-family: sans-serif;
 }
 
 header h1 {
