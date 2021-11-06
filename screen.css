@@ -7,16 +7,38 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+body {
+  font: 1em Saira, Arial, serif;
+  background-color: #b6e3ff69;
+}
 
-/* == GENERAL STYLES == */
-/* NAVIGATION */
-body > header {
-  display: inline-grid;
-  background-color: #3e7ba2;
-  color: white;
-  text-align: center;
-  line-height: 3em;
-  margin: auto;
+li {
+  display: list-item;
+}
+
+p, li {
+  font-size: 0.875em; /* 14 / 16 = 0.875 */
+  line-height: 1.14285714em; /* 16 * 1.14285714 = 18 */
+  overflow-wrap: break-word;
+}
+
+main {
+  display: flex;
+  color: #484850;
+}
+
+section {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  display: inline-flex;
+  flex-direction: column;
+  padding-bottom: 1.25em; /* 20 / 16 = 1.25 */
+}
+
+header {
+  width: 100%;
+  font-weight: bold;
+  font-family: sans-serif;
 }
 
 nav {
@@ -24,16 +46,10 @@ nav {
   padding: 1em;
 }
 
-nav > ul {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  list-style-type: none;
-  margin: auto;
-}
-
-nav > ul li {
-  padding: 1em;
+ul {
+  list-style-type: disc;
+  margin-top: 0.5em;
+  margin-left: 1.5em;
 }
 
 a {
@@ -42,7 +58,23 @@ a {
   line-height: 1.1em;
 }
 
-a[href^=http]:after {
+figure {
+  order: -1;
+  margin: 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
+footer {
+  background-color: #3e7ba2;
+  color: white;
+  margin: auto;
+  padding: 1em;
+}
+
+a[href^="http"]:after {
   content: " \1F517"; /* Add link icon behind links */
 }
 
@@ -58,16 +90,25 @@ a[href^=http]:after {
   content: "\1F4E7  ";
 }
 
-/* MAIN */
-main {
+nav > ul {
   display: flex;
+  flex-direction: column;
+  text-align: center;
+  list-style-type: none;
+  margin: auto;
 }
 
-/* HEADERS */
-header {
-  width: 100%;
-  font-weight: bold;
-  font-family: sans-serif;
+nav > ul li {
+  padding: 1em;
+}
+
+body > header {
+  display: inline-grid;
+  background-color: #3e7ba2;
+  color: white;
+  text-align: center;
+  line-height: 3em;
+  margin: auto;
 }
 
 header h1 {
@@ -76,6 +117,7 @@ header h1 {
 }
 
 header h2 {
+  color: #3e7ba2;
   font-weight: 900;
   font-size: 1.375em; /* 22 / 16 = 1.375 */
 }
@@ -88,7 +130,6 @@ header h3 {
 header h4 {
   font-weight: 600;
 }
-
 
 header > ul {
   display: flex;
@@ -108,26 +149,13 @@ header > ul li:nth-child(3) {
   flex-basis: 100%;
 }
 
-
-
-/* SECTIONS */
-section {
-  padding-right: 0.5em;
-  padding-left: 0.5em;
-  display: inline-flex;
-  flex-direction: column;
-  padding-bottom: 1.25em; /* 20 / 16 = 1.25 */
+footer > ul {
+  list-style-type: none;
 }
 
-/* CLASS-BASED */
 .date {
   font-weight: lighter;
   font-style: italic;
-}
-
-/* ID-BASED */
-main {
-  color: #484850;
 }
 
 main .primary-section > header {
@@ -136,14 +164,10 @@ main .primary-section > header {
   border-bottom: 0.1em solid #3e7ba2;
 }
 
-header h2 {
-  color: #3e7ba2
-}
-
 main header h3,
 main header ul,
 main header h4 {
-  color: black
+  color: black;
 }
 
 #contact-info {
@@ -154,58 +178,22 @@ main header h4 {
   list-style-type: none;
 }
 
-/* OTHER */
-body {
-  font: 1em Saira, Arial, serif;
-  background-color: #b6e3ff69;
-}
-
-ul {
-  list-style-type: disc;
-  margin-top: 0.5em;
-  margin-left: 1.5em;
-}
-
-li {
-  display: list-item;
-}
-
-p, li {
-  font-size: 0.875em; /* 14 / 16 = 0.875 */
-  line-height: 1.14285714em; /* 16 * 1.14285714 = 18 */
-  overflow-wrap: break-word;
-}
-
-footer {
-  background-color: #3e7ba2;
-  color: white;
-  margin: auto;
-  padding: 1em;
-}
-
-footer > ul {
-  list-style-type: none;
-}
-
-main, 
-#resume-body-main, 
-#resume-body-other, 
+main,
+#resume-body-main,
+#resume-body-other,
 #courses-main {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-/* == RESUME STYLES == */
 #resume-main {
   flex-direction: column;
 }
 
-/* == COURSEWORK STYLES == */
 #courses-main {
   flex-direction: column;
 }
 
-/* == HOME STYLES == */
 #home-main {
   margin: auto;
   flex-direction: column;
@@ -216,18 +204,9 @@ main,
   font-size: 1em;
 }
 
-figure {
-  order: -1;
-  margin: 1em;
-}
-
-img {
-  max-width: 100%;
-}
-
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 23.889em){ /* 430px, 18 pt */
+@media screen and (min-width: 23.889em) { /* 430px, 18 pt */
   nav > ul {
     flex-direction: row;
   }
@@ -252,7 +231,7 @@ img {
 
   #resume-body-main,
   #resume-body-other {
-    width: 50vw
+    width: 50vw;
   }
 
   #resume-body-other {
@@ -278,12 +257,12 @@ img {
   }
 
   #contact-info {
-    order: 0
+    order: 0;
   }
 }
 
 @media screen and (min-width: 55.556em) { /* 1000 px, 18 pt */
-  #courses-main { 
+  #courses-main {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
