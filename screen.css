@@ -227,7 +227,7 @@ img {
 
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 430px){
+@media screen and (min-width: 23.889em){ /* 430px, 18 pt */
   nav > ul {
     flex-direction: row;
   }
@@ -245,7 +245,7 @@ img {
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 33.333em) { /* 600px, 18 pt */
   #resume-main {
     flex-direction: row;
   }
@@ -282,7 +282,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 55.556em) { /* 1000 px, 18 pt */
   #courses-main { 
     grid-template-columns: 1fr 1fr 1fr;
   }
