@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font: 1em Saira, Arial, serif;
+  font: 1em "Saira", Arial, serif;
   background-color: #b6e3ff69;
 }
 
@@ -22,7 +22,7 @@ li {
 }
 
 p, li {
-  font-size: 0.875em; /* 14 / 16 = 0.875 */
+  font-size: 0.9375em; /* 15 / 16 = 0.9375 */
   line-height: 1.14285714em; /* 16 * 1.14285714 = 18 */
   overflow-wrap: break-word;
 }
@@ -43,7 +43,7 @@ section {
 header {
   width: 100%;
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: "Saira", sans-serif !important;
 }
 
 nav {
@@ -138,7 +138,7 @@ header h4 {
 
 header > ul {
   display: flex;
-  font-size: 0.875em; /* 14 / 16 = 0.875 */
+  font-size: 0.9375em; /* 15 / 16 = 0.9375 */
   flex-wrap: wrap;
   margin-left: 0;
   margin-top: auto;
