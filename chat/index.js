@@ -1,4 +1,9 @@
 $(() => {
+    const isIframe = window.self !== window.top;
+    if (isIframe) {
+        $("body > header, body > footer").css("display", "none")
+    }
+
     const socket = new WebSocket('ws://localhost:5000/chat');
     // User color
     function randomHSL(){

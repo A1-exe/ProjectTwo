@@ -205,8 +205,69 @@ main,
   text-align: center;
 }
 
+#home-chat iframe {
+  width: 100%;
+  height: 31.25em; /* 500 px */
+}
+
 #about-me p {
   font-size: 1em; /* 16px */
+}
+
+#chat-main {
+  margin: auto;
+  text-align: center;
+  flex-direction: column;
+}
+
+#chat-box {
+  display: flex;
+  grid-template-columns: 1fr; 
+  flex-direction: column-reverse;
+  height: 21.875em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0 auto;
+}
+
+.chat-object ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  text-align: left;
+}
+
+.chat-user {
+  padding-right: 0.3125em;
+}
+
+#chat-form {
+  margin: 0 auto;
+}
+
+.chat-form-outer li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.chat-form-outer {
+  text-align: right;
+  list-style-type: none;
+  padding: 0;
+}
+
+.chat-form-outer input[type="submit"] {
+  margin-left: auto;
+}
+
+.chat-form-outer li label {
+  flex-grow: 1;
+}
+
+.chat-form-outer li p {
+  flex-grow: 2;
+  margin: 0;
 }
 
 
