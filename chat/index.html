@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira">
+    <link rel="stylesheet" href="../assets/screen.css">
+
+    <!-- LOAD JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- LOAD CHAT CLIENT -->
+    <script src="./index.js"></script>
+
+    <!-- SET TITLE -->
+    <title>Portfolio: Tyree Spears</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navigation in here? -->
+      <h1>Tyree Spears</h1>
+      <nav>
+        <ul>
+          <li><a href="../">Home</a></li>
+          <li><a href="../resume/">Resume</a></li>
+          <li><a href="../coursework/">Courses</a></li>
+          <li><a href="./">Chat</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="chat-main">
+      <header>
+        <h1>Chat</h1>
+      </header>
+      <section id="chat-box">
+      </section>
+      <section id="chat-send">
+        <form id="chat-form">
+          <ul class="chat-form-outer">
+            <li>
+              <label for="chat-name">Name:</label>
+              <input type="text" name="chat-name">
+            </li>
+            <li>
+              <label for="chat-new-message">Say:</label>
+              <input type="text" name="chat-new-message">
+            </li>
+            <li> 
+              <input type="submit" value="SEND" id="chat-submit">
+            </li>
+          </ul>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <b>Copyright &copy; 2021 Tyree Spears. All right reserved.</b>
+    </footer>
+  </body>
+</html>

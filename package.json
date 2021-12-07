@@ -1,0 +1,28 @@
+{
+  "name": "A1.exe",
+  "version": "0.1.0",
+  "description": "Express API V1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-ws": "^5.0.2",
+    "path": "^0.12.7"
+  },
+  "engines": {
+    "node": "8.9.4",
+    "npm": "6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://a1-exe.herokuapp.com/"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "A1.exe",
+  "license": "MIT"
+}
