@@ -205,20 +205,15 @@ main,
   text-align: center;
 }
 
-<<<<<<< HEAD
-=======
 #home-chat iframe {
   width: 100%;
   height: 31.25em; /* 500 px */
 }
 
->>>>>>> 75f69632871241b6a9d0f5090b176a03b323ab6a
 #about-me p {
   font-size: 1em; /* 16px */
 }
 
-<<<<<<< HEAD
-=======
 #chat-main {
   margin: auto;
   text-align: center;
@@ -275,7 +270,6 @@ main,
   margin: 0;
 }
 
->>>>>>> 75f69632871241b6a9d0f5090b176a03b323ab6a
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 23.889em) { /* 430px, 18 pt */
@@ -301,11 +295,7 @@ main,
   }
 }
 
-<<<<<<< HEAD
-@media screen and (min-width: 33.333em) { /* 600px, 18 pt */
-=======
 @media screen and (min-width: 43.75em) { /* 700px, 16 pt */
->>>>>>> 75f69632871241b6a9d0f5090b176a03b323ab6a
   #resume-main {
     flex-direction: row;
   }
@@ -342,11 +332,7 @@ main,
   }
 }
 
-<<<<<<< HEAD
-@media screen and (min-width: 55.556em) { /* 1000 px, 18 pt */
-=======
 @media screen and (min-width: 62.5em) { /* 1000 px, 16 pt */
->>>>>>> 75f69632871241b6a9d0f5090b176a03b323ab6a
   #courses-main {
     grid-template-columns: 1fr 1fr 1fr;
   }
